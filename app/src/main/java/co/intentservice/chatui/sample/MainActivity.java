@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         chatView.addMessage(new ChatMessage("Message received", System.currentTimeMillis(), ChatMessage.Type.RECEIVED));
         chatView.addMessage(new ChatMessage("A message with a sender name",
                 System.currentTimeMillis(), ChatMessage.Type.RECEIVED, "Ryan Java"));
+        chatView.addMessage(new ChatMessage(findViewById(R.id.sample),System.currentTimeMillis(), ChatMessage.Type.RECEIVED));
         chatView.setOnSentMessageListener(new ChatView.OnSentMessageListener() {
             @Override
             public boolean sendMessage(ChatMessage chatMessage) {

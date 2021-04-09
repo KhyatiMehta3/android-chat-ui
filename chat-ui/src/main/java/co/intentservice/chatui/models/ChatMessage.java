@@ -1,6 +1,7 @@
 package co.intentservice.chatui.models;
 
 import android.text.format.DateFormat;
+import android.view.View;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,6 +15,7 @@ public class ChatMessage {
     private long timestamp;
     private Type type;
     private String sender;
+    private View view;
 
     public ChatMessage(String message, long timestamp, Type type) {
         this.message = message;
@@ -24,6 +26,12 @@ public class ChatMessage {
     public ChatMessage(String message, long timestamp, Type type, String sender) {
         this(message, timestamp, type);
         this.sender = sender;
+    }
+
+    public ChatMessage(View message, long timestamp, Type type){
+        this.view = message;
+        this.timestamp = timestamp;
+        this.type = type;
     }
 
     public long getTimestamp() {
@@ -65,6 +73,8 @@ public class ChatMessage {
     public String getSender() {
         return sender;
     }
+
+    public View getView() {return  view;}
 
     public void setSender(String sender) {
         this.sender = sender;

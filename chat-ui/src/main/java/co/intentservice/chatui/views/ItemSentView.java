@@ -8,6 +8,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import co.intentservice.chatui.R;
@@ -21,6 +22,7 @@ public class ItemSentView extends MessageView {
 
     private CardView bubble;
     private TextView messageTextView, timestampTextView;
+    private LinearLayout customView;
 
 
     /**
@@ -36,6 +38,11 @@ public class ItemSentView extends MessageView {
         }
 
         messageTextView.setText(message);
+
+
+    }
+
+    public void setMessage(View message) {
 
 
     }

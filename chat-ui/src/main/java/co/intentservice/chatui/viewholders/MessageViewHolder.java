@@ -43,6 +43,10 @@ public class MessageViewHolder {
 
     }
 
+    public void setMessage(View message){
+        messageView.setMessage(message);
+    }
+
     public void setTimestamp(String timestamp) {
 
         messageView.setTimestamp(timestamp);

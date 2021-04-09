@@ -2,6 +2,7 @@ package co.intentservice.chatui.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -24,6 +25,8 @@ public abstract class MessageView extends FrameLayout {
      * @param message The message that you want to be displayed.
      */
     public abstract void setMessage(String message);
+
+    public abstract void setMessage(View message);
 
     /**
      * Method to set the timestamp that the message was received or sent on the screen.

@@ -51,6 +51,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
+            <LinearLayout
+                android:id="@+id/message_custom_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
             <android.support.v4.widget.Space
                 android:layout_width="match_parent"
                 android:layout_height="4dp" />
